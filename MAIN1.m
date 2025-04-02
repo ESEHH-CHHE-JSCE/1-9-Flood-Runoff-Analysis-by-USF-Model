@@ -97,7 +97,7 @@ trq=[(1:ndata)' rain Q(jj)];
 RMSE=sqrt(mean((obsq-trq(:,3)).^2));
 %% Nash–Sutcliffe model efficiency coefficient (NSE)
 NSE=1-sum((obsq-trq(:,3)).^2)/sum((obsq-mean(obsq)).^2);
-fprintf('\nErro Evaluation Value\n')
+fprintf('\nError Evaluation Value\n')
 fprintf('  RMSE=%.6f  NSE=%.4f\n',RMSE,NSE)
 
 %% graphs
